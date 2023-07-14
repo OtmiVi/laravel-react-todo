@@ -18,6 +18,7 @@ class TaskFactory extends Factory
     {
         return [
             'task' => $this->faker->sentence,
+            'status' => $this->faker->boolean(75),
         ];
     }
 }
