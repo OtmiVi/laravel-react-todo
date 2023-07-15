@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::apiResource('tasks', TaskApiController::class);
+Route::patch('/tasks/status/{task}', [TaskApiController::class, 'changeStatus']);
